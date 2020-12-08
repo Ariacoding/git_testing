@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> What Aria likes</title>
+    <div id="BackgroundColor"></div>
+    <button id="ClickFor background"></button>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            background-image: url(Is\ good.jpg)
+        }
+
+        #buttonClickMe {
+            background-color: greenyellow;
+            width: 200px;
+            height: 65px;
+            font-size: 32px;
+            padding: 5px 10px;
+            border: solid 2px black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #buttonClickMe:hover {
+            background-color: coral;
+            border-radius: 0px;
+        }
+
+        .container {
+            width: 20%;
+            margin: 50px auto;
+            background-image: linear-gradient(red, yellow, gold, orange);
+            border: 25px solid transparent;
+            border-image: url(GrassNew.png) 25% round;
+            padding: 15px;
+        }
+
+        #WebTitle {
+            color: #454545;
+        }
+
+        li {
+            font-size: 32px;
+        }
+
+        .gamesImage {
+            width: 40px;
+        }
+    </style>
+    <script>
+
+        function showMessage() {
+            var button = document.getElementById("buttonClickMe");
+            if (button.innerText == "Clicked") {
+                button.innerText = "Stop it";
+            } else if (button.innerText == "Stop it") {
+                button.innerText = "Told you to stop it";
+            } else if (button.innerText == "Told you to stop it") {
+                button.innerText = "JUST STOP";
+            } else {
+                button.innerText = "Clicked";
+            }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <h1 id="WebTitle"> Aria's Favourite Food </h1>
+        <ul style='list-style-type:"\1F60B"'>
+
+
+            <li class="MyFood" style="color:rgb(255, 173, 45);"><i class="em em-first_place_medal"
+                    aria-role="presentation" aria-label="FIRST PLACE MEDAL"></i>festenjoon<i
+                    class="em em-first_place_medal" aria-role="presentation" aria-label="FIRST PLACE MEDAL"></i></li>
+            <li class="MyFood" style=" color:darkgray;"><i class="em em-second_place_medal" aria-role="presentation"
+                    aria-label="SECOND PLACE MEDAL"></i><u>SUSHI<i class="em em-second_place_medal"
+                        aria-role="presentation" aria-label="SECOND PLACE MEDAL"></i></u></li>
+            <li class="MyFood" style=" color:#cd7f32;"><i class="em em-third_place_medal" aria-role="presentation"
+                    aria-label="THIRD PLACE MEDAL"></i><strong>My dads steak</strong><i class="em em-third_place_medal"
+                    aria-role="presentation" aria-label="THIRD PLACE MEDAL"></i></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1 id="WebTitle">🎮Arias favourite games </h1>
+        <ul style='list-style-type:"\1F60B"'>
+
+
+            <li class="MyFood" style="color:rgb(10, 163, 252);"><i class="em em-first_place_medal"
+                    aria-role="presentation" aria-label="FIRST PLACE MEDAL"></i>Fortnite <i
+                    class="em em-first_place_medal" aria-role="presentation" aria-label="FIRST PLACE MEDAL"></i></li>
+            <li class="MyFood" style=" color:rgb(87, 83, 83);"> <i class="em em-second_place_medal"
+                    aria-role="presentation" aria-label="SECOND PLACE MEDAL"></i><u>Roblox <i
+                        class="em em-second_place_medal" aria-role="presentation"
+                        aria-label="SECOND PLACE MEDAL"></i><img src="Roblox.jpg" class="gamesImage"></u></li>
+            <li class="MyFood" style=" color:#256116;"><i class="em em-third_place_medal" aria-role="presentation"
+                    aria-label="THIRD PLACE MEDAL"></i><strong>Minecraft</strong><i class="em em-third_place_medal"
+                    aria-role="presentation" aria-label="THIRD PLACE MEDAL"></i> <img src="GrassNew.png"
+                    class="gamesImage"></li>
+        </ul>
+    </div>
+
+
+</body>
+
+<body>
+    <div class="container">
+        <button id="buttonClickMe" onclick="showMessage()">Click Me!</button>
+    </div>
+</body>
+
+</html>
